@@ -17,3 +17,12 @@ form.addEventListener("input", (event) => {
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 });
+
+// Slider fill
+const slider = document.getElementById("amount");
+slider.addEventListener("input", (event) => {
+  slider.setAttribute(
+    "style",
+    `--percentage:${(event.target.value / 4) * 100}% !important`
+  );
+});
