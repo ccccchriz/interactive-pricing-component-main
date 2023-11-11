@@ -173,6 +173,7 @@ main {
   aspect-ratio: 1;
   border-radius: 50%;
   box-shadow: 0px 10px 25px 10px hsl(var(--clr-slider-bar));
+  cursor: pointer;
 }
 
 /* 
@@ -190,6 +191,16 @@ main {
   border-radius: 50%;
   border: none;
   box-shadow: 0px 10px 25px 10px hsl(var(--clr-slider-bar));
+  cursor: pointer;
+}
+
+/* Hover effect */
+#amount::-moz-range-thumb:hover {
+  background-color: hsl(var(--clr-slider-bar));
+}
+
+#amount::-webkit-slider-thumb:hover {
+  background-color: hsl(var(--clr-slider-bar));
 }
 
 /* #amount::-moz-range-progress {
@@ -236,6 +247,7 @@ main {
   padding-bottom: 2rem;
   margin-bottom: 2rem;
   border-bottom: 1px solid hsl(var(--clr-slider-empty));
+  cursor: pointer;
 }
 
 .form__toggle::after {
@@ -243,7 +255,7 @@ main {
   font-size: 0.65rem;
   background-color: hsl(var(--clr-discount-background));
   color: hsl(var(--clr-discount-text));
-  padding: 0.2rem 0.5rem;
+  margin: 0.2rem 0.5rem;
   border-radius: 4rem;
 }
 
@@ -263,7 +275,7 @@ main {
 }
 
 #yearly:hover {
-  opacity: 0.7;
+  background: hsl(var(--clr-slider-bar)) !important;
 }
 
 #yearly:checked {
@@ -305,4 +317,6 @@ main {
   margin-bottom: 1rem;
   font-size: 0.8rem;
   font-weight: var(--fw-extra-bold);
+  cursor: pointer;
+  transition: 0.4s;
 }
