@@ -7,9 +7,9 @@ form.addEventListener("input", (event) => {
   const discount = form.querySelector("#yearly").checked;
   const value = form.querySelector("#amount").value;
 
-  form.querySelector("#price").textContent = (
+  form.querySelector("#price").textContent = `$${(
     prices[value] * (discount ? 0.75 : 1)
-  ).toFixed(2);
+  ).toFixed(2)}`;
 
   form.querySelector("#pageviews").textContent = views[value];
 });
