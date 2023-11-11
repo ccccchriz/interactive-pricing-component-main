@@ -176,6 +176,7 @@ main {
   border-radius: 50%;
   box-shadow: 0px 10px 25px 10px hsl(var(--clr-slider-bar));
   cursor: pointer;
+  transition: 0.3s;
 }
 
 /* 
@@ -194,6 +195,7 @@ main {
   border: none;
   box-shadow: 0px 10px 25px 10px hsl(var(--clr-slider-bar));
   cursor: pointer;
+  transition: 0.3s;
 }
 
 /* Hover effect */
@@ -281,7 +283,7 @@ main {
   background: hsl(var(--clr-toggle-background));
   padding-left: 0rem;
   appearance: none;
-  transition: padding-left 0.5s;
+  transition: padding-left 0.5s, background 0.3s;
   cursor: pointer;
 }
 
